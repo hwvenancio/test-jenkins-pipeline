@@ -1,5 +1,5 @@
 
-node {
+node('docker') {
     stage('Test') {
         sh '''#!/bin/bash -l
             for ((i=0; i < 100; i++)); do
